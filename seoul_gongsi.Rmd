@@ -1,0 +1,17 @@
+---
+title: "서울 공시지가 R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(readr)
+library(stringr)
+```
+
+```{r}
+gosi<-read.csv("./data/jiga_2018.csv", header = T, stringsAsFactors = F, fileEncoding = "utf-8")
+
+str(gosi)
+```
+
